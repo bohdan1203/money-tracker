@@ -1,6 +1,6 @@
 {
-  "homepage": "https://bohdan1203.github.io/money-tracker/",
-  "name": "money-tracker",
+  "homepage": "https://bohdan1203.github.io/money-tracker",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

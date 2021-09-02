@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+
+    font-family: sans-serif;
+    
+  }
+
+  #root {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+
+  header {
+    display: flex;
+    padding: 10px;
+  }
+
+  button {
+    font-family: "Oswald";
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+
+
+  #new-operation-buttons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .new-operation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid hsl(0, 97%, 15%);
+    border-radius: 50%;
+    background-color: hsl(6, 100%, 85%);
+
+    font-weight: 700;
+    font-size: 22px;
+    color: hsl(0, 97%, 15%);
+  }
+
+  .new-operation:last-child {
+    background-color: hsl(125, 100%, 85%);
+    border: 2px solid hsl(125, 97%, 15%);
+    color: hsl(125, 97%, 15%);
+  }
+
+  #display-options {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .display {
+    background-color: lawngreen;
+    color: black;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+
+    border-radius: 10px;
+    border: none;
+    background: none;
+
+    
+    background-color: transparent;
+
+
+    font-family: "Oswald";
+  }
+
+  .display:last-child {
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+
+  h1, h3 {
+    font-family: "Oswald";
+    margin-right: auto;
+  }
+
+
+
+  #categories-options {
+    width: 300px;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+
+  #filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .filter {
+    margin: 0 10px 0 10px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+  fieldset {
+    padding: 5px;
+  }
+
+
+  
+  .backdrop {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 20rem;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .are-you-sure {
+    min-height: 100px;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #table {
+    width: 60%;
+
+  }
+
+  ol {
+    width: 100%;
+  
+  }
+
+  li {
+      margin: 10px;
+      padding: 5px;
+      display: grid;
+      grid-template-columns: 0.4fr 0.6fr 0.4fr 0.6fr 0.3fr;
+      background: rgb(224, 224, 224);
+      border-radius: 10px;
+  }
+
+  li:first-child {
+    background-color: #191919;
+    font-family: "Oswald";
+  }
+
+
+.cell {
+ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.table-top {
+  color: white;
+}
+
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+canvas {
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.edit-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+#no-data {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.filter-by-time {
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.filter-by-category, .filter-by-description {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.edit-categories {
+
+
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.add-category {
+  height: 120px;
+}
+
+.radio {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}

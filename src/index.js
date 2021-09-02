@@ -6,12 +6,13 @@ import App from "./App";
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <Switch>
-        <Route path="/"  component={App} />
-      </Switch>
-    </Router>
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <Router>
+  //     <Switch>
+  //       <Route path="/"  component={App} />
+  //     </Switch>
+  //   </Router>
+  // </React.StrictMode>
+  <App />,
   document.getElementById("root")
 );

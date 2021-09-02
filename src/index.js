@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route exact path="/money-project"  component={App} />
+        <Route path="/"  component={App} />
       </Switch>
     </Router>
   </React.StrictMode>,
